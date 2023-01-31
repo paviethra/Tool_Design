@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar-holder{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 0.85rem;
+}
+
+.fa-home{
+    font-size:2rem;
+    cursor: pointer;
+}
+#basic-nav-dropdown{
+    margin: 0px 20px;
+}
+
+.anchor-tab{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    margin-left: 40px;
+}
+.anchor-tab a{
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #000;
+    margin-right: 7rem;
+}
+.card-heading{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 22px;
+    height: 20px;
+    line-height: 20px;
+
+}
+
+.card-heading i  {
+    font-size: 1.4rem;
+    margin-right: 2px;
+}
+.card-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.card{
+    box-shadow:  5px 10px 17px #e9e2e2;
+    width: 25em;
+    height: 13em;
+    border-radius:3px;
+    border: none;
+}
+img{
+    border-radius: 15px;
+    border:2px solid #000;
+}
+
+h6{
+    margin-top: 10px;
+}
+h4{
+    margin-left: 10px;
+}
+progress{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 80px;
+    height: 5px;
+    background: #888888;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.card-top{
+    display: flex;
+    flex-direction: row;
+}
+.card-tp-left{
+    display: flex;
+    flex-direction: column;
+}
+.card-tp-right{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+.card-data{
+    display: flex;
+    width:25em;
+    height: 1.5em;
+    line-height: 1.5em;
+    font-size: 12px;
+}
+.card-data p{
+    margin-left:4px;
+}
+
+.card-rating i{
+    margin-left: 6px;
+    cursor: pointer;
+}
+.card-bottom{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 2.8rem 2rem 0 0;
+    font-size:13px;
+    height:2em;
+    line-height: 2em;
+}
+.card-bottom p{
+    margin-left: 9px;
+    font-style: italic;
+    
+}
+.card-btm-details{
+    display: flex;
+    flex-direction: row;
+}
+.card-btm-icons i{
+    margin-left:1em;
+    cursor: pointer;
+}
+
+/* @media only screen and (max-width:600px){
+
+    .card-container{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .card{
+        width: 24em;
+    }
+    .card-data,.card-btm-details{
+        font-size: 8.5px;
+    }
+} */
