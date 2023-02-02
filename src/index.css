@@ -1,27 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 *{
     margin:0;
     padding: 0;
 }
 body{
     font-family: 'Roboto', sans-serif;
+    margin: 10px;
 }
 
+/* Navigation Bar */
 .navbar-holder{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    font-size: 0.85rem;
+    font-size: 0.95rem;
 }
 
 .fa-home{
     font-size:2rem;
     cursor: pointer;
 }
+
 #basic-nav-dropdown{
     margin: 0px 20px;
 }
 
+/* Wrapper holding both the left &right side */
+.data-wrapper{
+    display: flex;
+    flex-direction:row;
+    padding: 0px 10px;
+}
+ .left{
+    width:77%;
+}
+
+.right{
+    width:23%;
+}
+
+/* Styling the Test Suites area */
 .anchor-tab{
     display: flex;
     flex-direction: row;
@@ -34,21 +53,28 @@ body{
     color: #000;
     margin-right: 7rem;
 }
-.card-heading{
+.heading{
     display:flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin: 22px;
-    height: 20px;
-    line-height: 20px;
-
+    margin:15px;
 }
 
-.card-heading i  {
-    font-size: 1.4rem;
-    margin-right: 2px;
+.heading i{
+    font-size: 1.5rem;
+    margin-right: 7px;
+    cursor: pointer;
 }
+
+.heading h5{
+    color:rgba(240, 158, 5, 0.944);
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+
+
 .card-container{
     display: flex;
     flex-direction: row;
@@ -56,13 +82,13 @@ body{
 }
 .card{
     box-shadow:  5px 10px 17px #e9e2e2;
-    width: 25em;
+    width:28em;
     height: 13em;
     border-radius:3px;
     border: none;
 }
 img{
-    border-radius: 15px;
+    border-radius: 10px;
     border:2px solid #000;
 }
 
@@ -75,7 +101,7 @@ h4{
 progress{
     -webkit-appearance: none;
     appearance: none;
-    width: 80px;
+    width: 50px;
     height: 5px;
     background: #888888;
     margin-top: 10px;
@@ -132,17 +158,39 @@ progress{
     cursor: pointer;
 }
 
-/* @media only screen and (max-width:600px){
+/* Empty-area */
+    .empty{
+        width:2%;
+    }
 
-    .card-container{
+/* Right-side area */
+
+    input[type='text']{
+    width:97%;
+    padding-left: 10px;
+    }
+   .small-box{
         display: flex;
-        justify-content: center;
-        align-items: flex-start;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
     }
-    .card{
-        width: 24em;
+    .small-box i{
+        font-size: 1.3em;
+        margin-right: 10px;
     }
-    .card-data,.card-btm-details{
-        font-size: 8.5px;
+
+    .small-box p{
+        background-color: #7e7d7d;
+        color: #fff;
+        padding:0px 6px;
+        border-radius: 20px;
+    } 
+
+    .box{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
-} */
+
+   
